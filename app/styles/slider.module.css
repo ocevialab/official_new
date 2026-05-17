@@ -1,0 +1,44 @@
+.local-class :global(body) {
+  background-color: black;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  height: 120vh;
+  overflow: hidden;
+  background: black;
+}
+
+.main img {
+  object-fit: cover;
+}
+
+.sliderContainer {
+  position: absolute;
+  top: calc(100vh - 350px);
+}
+
+.slider {
+  position: relative;
+  white-space: nowrap;
+}
+
+.slider .text {
+  position: relative;
+  margin: 0px;
+  color: white;
+  font-size: 230px;
+  font-weight: 500;
+  padding-right: 50px;
+}
+
+.slider .text:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+.sliderContainer .text {
+  will-change: transform;
+}

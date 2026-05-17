@@ -1,0 +1,48 @@
+.main {
+  position: relative;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #050505;
+  padding-block: clamp(2.75rem, 7vw, 5rem);
+}
+
+.body {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f6f6f6;
+  font-size: clamp(1.0625rem, 2.85vw, 2.35rem);
+  line-height: 1.55;
+}
+
+.body p {
+  width: 90%;
+  padding: 2rem;
+}
+
+.body span {
+  color: #393cec;
+}
+
+/* Responsive overrides */
+@media (max-width: 768px) {
+  .body p {
+    width: 85%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .body p {
+    width: 90%;
+    padding: 0.5rem;
+  }
+}

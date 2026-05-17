@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ocevialab.com
+
+# Sitemaps
+Sitemap: https://ocevialab.com/sitemap.xml

@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 150px;
+  background-color: #050505;
+  margin-top: 150px;
+}
+
+.main .container {
+  display: flex;
+  height: 10px;
+  gap: 40px; /* Adds space between the icons */
+  justify-content: center; /* Ensures icons are centered horizontally */
+  align-items: center; /* Ensures icons are centered vertically */
+  padding: 20px;
+}
+
+.container img {
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.container a:hover img {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(34%) saturate(1554%)
+    hue-rotate(170deg) brightness(102%) contrast(101%);
+  transform: scale(1.1);
+  transition: 0.05s;
+}
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .main {
+    gap: 150px; /* Restore original gap on larger screens */
+  }
+
+  .main .container {
+    flex-wrap: nowrap;
+    gap: 80px;
+    height: 100px;
+  }
+
+  .container img {
+    width: 160px; /* Larger icon size for desktop */
+  }
+}
