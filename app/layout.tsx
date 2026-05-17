@@ -90,9 +90,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  console.log("we are OceviaLab, This is implemented coding from scratch");
-  console.log("Not a clone, but a unique creation");
-  console.log("Not a no-code tool, but a custom-built solution");
   return (
     <html lang="en">
       <head>

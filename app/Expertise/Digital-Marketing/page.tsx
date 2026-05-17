@@ -25,8 +25,6 @@ interface WorkItem {
 
 const filteredTag = "Digital Marketing";
 
-console.log("පාලූ පැලේ මා");
-
 const services = [
   {
     title: "Brand Strategy & Positioning",

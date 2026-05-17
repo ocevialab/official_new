@@ -63,7 +63,6 @@ const Contact = () => {
     e.preventDefault();
     if (!formRef.current) return;
     setStatus("sending");
-    console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!);
     try {
       await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,

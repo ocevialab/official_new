@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
     return `${Date.now()}`; // for chunk cache busting
   },
   images: {
-    domains: ["ocevialab.com", "www.ocevialab.com"],
+    remotePatterns: [
+      { protocol: "https", hostname: "ocevialab.com", pathname: "/**" },
+      { protocol: "https", hostname: "www.ocevialab.com", pathname: "/**" },
+    ],
   },
   experimental: {
     serverActions: {

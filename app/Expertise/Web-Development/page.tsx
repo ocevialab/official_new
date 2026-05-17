@@ -63,8 +63,6 @@ const Page: React.FC = () => {
     services.map(() => false)
   );
 
-  console.log("චන්ද්‍රපාල හුත්තෝ");
-
   let xPercent = 0;
   let direction = -1;
 

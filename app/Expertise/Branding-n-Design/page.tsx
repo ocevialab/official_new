@@ -23,8 +23,6 @@ interface WorkItem {
   tag: string[];
 }
 
-console.log("හුකන වෙලේ...");
-
 const filteredTag = "Branding & Design";
 
 const services = [
