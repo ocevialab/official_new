@@ -139,9 +139,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="hero-title-wrap pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-4">
+      <div className="hero-title-wrap pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-3 sm:px-4">
         <h1
-          className="flex flex-wrap justify-center font-Mokoto text-7xl font-bold tracking-widest text-white mix-blend-soft-light drop-shadow-none sm:text-9xl md:text-[8rem] lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem]"
+          className="flex flex-nowrap justify-center font-Mokoto text-[clamp(1.625rem,7.25vw,4.5rem)] font-bold tracking-[0.06em] text-white mix-blend-soft-light drop-shadow-none sm:text-7xl sm:tracking-widest md:text-[8rem] md:tracking-widest lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem]"
           aria-label={TITLE}
         >
           {TITLE.split("").map((char, i) => (
