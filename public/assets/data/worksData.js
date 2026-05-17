@@ -6,7 +6,7 @@ const worksData = [
     lowqualityImg: "/assets/Jimmulow.webp",
     name: "HQ Entertainment",
     textOverlay: "Igniting Unforgettable moments Through Entertainment",
-    link: "https://hqweb.netlify.app/",
+    link: "",
     description:
   "For HQ Entertainment, we crafted a bold and immersive digital experience that captures the energy of modern entertainment. With dynamic visuals, interactive elements, and a sleek user interface, the website positions HQ as a cutting-edge brand in the industry. From event showcases to talent features, the platform reflects HQ’s vibrant identity and commitment to unforgettable experiences.",
     technology: {
@@ -35,7 +35,7 @@ const worksData = [
     lowqualityImg: "/assets/articianLandlow.webp",
     name: "Portfolio - Rusheni Botheju",
     textOverlay: "Designing Seamless Experiences",
-    link: "https://rusheniportfolio.netlify.app/",
+    link: "",
     description:
   "The portfolio of Rusheni Botheju showcases a refined fusion of creativity, professionalism, and personal branding. Designed with elegance and clarity, the site highlights her unique style, accomplishments, and work philosophy. From visual storytelling to smooth navigation, every element was crafted to authentically represent Rusheni’s identity while offering an engaging user experience.",
     technology: {
@@ -65,7 +65,7 @@ const worksData = [
   lowqualityImg: "/assets/RideLow.jpg",
   name: "RIDE",
   textOverlay: "Fuel Your Movement, Ignite Your Day",
-  link: "https://ride-sample.netlify.app/",
+  link: "",
   description:
   "RIDE Energy Drink is more than just a beverage — it’s a mindset. This sample project captures the raw momentum of movement, crafted for those who thrive on energy and don’t slow down. From intense workouts to creative all-nighters, RIDE powers every moment with clean, lasting fuel. Through bold 3D visuals, GSAP-powered transitions, and seamless digital storytelling, we brought the brand to life in a way that speaks to real performance, real ingredients, and unstoppable drive.",
   technology: {
@@ -93,7 +93,7 @@ const worksData = [
     lowqualityImg: "/assets/BioZonelow.webp",
     name: "BioZone",
     textOverlay: "Unleashing Your Potential in Biology",
-    link: "https://www.charithamunasinghe.lk/",
+    link: "",
     description:
       "With 'BioZone', we created a dynamic platform tailored for advanced-level biology education. Designed to support both English and Sinhala medium students, BioZone seamlessly integrates physical and online learning experiences. The platform offers comprehensive educational resources and tools for students to thrive.",
     technology: {
@@ -125,7 +125,7 @@ const worksData = [
     lowqualityImg: "/assets/Lolinslow.webp",
     name: "Lolins",
     textOverlay: "Redefining Beauty, One Style at a Time",
-    link: "https://lolins.netlify.app/",
+    link: "",
     description:
       "The website we created for Lolins Hair Salon perfectly reflects the brand’s visual narrative. From showcasing personalized hair care and styling services to making appointment booking effortless for clients, our team designed a platform that reflects the salon’s unique identity, combining aesthetics with functionality.",
     technology: {
@@ -154,7 +154,7 @@ const worksData = [
     lowqualityImg: "/assets/TrafficToursSLlow.webp",
     name: "Sri Lanka Traffic Tours",
     textOverlay: "Your Gateway to Unforgettable Journeys",
-    link: "https://srilankatraffictours.com/",
+    link: "",
     description:
       "With Sri Lanka Traffic Tours, we designed a vibrant and engaging digital platform that brings the spirit of travel to life. From showcasing services to enabling a smooth booking experience, every detail was crafted with the user in mind. The website combines bold visuals, seamless navigation, and subtle animations to create a dynamic yet easy-to-use experience. By reflecting the brand’s personality through thoughtful design and storytelling, we made Sri Lanka Traffic Tours a standout destination for travel inspiration and planning.",
     technology: {
@@ -183,7 +183,7 @@ const worksData = [
     lowqualityImg: "/assets/IGLlow.webp",
     name: "IGL",
     textOverlay: "Your Trusted Partner in Global Education",
-    link: "https://igl2.netlify.app/",
+    link: "",
     description:
       "We partnered with IGL Sri Lanka to build a dynamic digital platform that reflects their leadership in migration and overseas education services. Using React.js and TailwindCSS, we developed a responsive, user-friendly interface designed in Figma. The site highlights their expertise in student guidance, visa support, and global university placements, while SEO and social media integration ensure strong visibility and engagement.",
     technology: {
@@ -212,7 +212,7 @@ const worksData = [
     lowqualityImg: "/assets/BespokeFurniturelow.webp",
     name: "Bespoke Furniture",
     textOverlay: "Where Heritage Meets Elegance",
-    link: "https://artisanbespokefurniture.com/",
+    link: "",
     description:
       "With 'Bespoke Furniture by Artisan', we celebrate the art of collaboration between U.K. citizens and Sri Lankan artisans. Our platform showcases exquisite antique furniture that blends traditional craftsmanship with modern elegance. From concept to completion, we designed a visually engaging website that reflects Bespoke's mission to create furniture resonating with history and beauty.",
     technology: {
@@ -247,7 +247,7 @@ const worksData = [
   lowqualityImg: "/assets/StarCatcherLow.jpg",
   name: "Star Catcher",
   textOverlay: "A Magical 3D Storybook Adventure",
-  link: "https://starcatcher-wm.netlify.app/",
+  link: "",
   description:
   "Star Catcher is a 3D children's storybook that follows the whimsical journey of a young dreamer who sets out to catch a falling star. Designed with vibrant visuals and gentle storytelling, the project blends imagination, narrative, and design into an immersive experience for curious young minds. Special thanks to Janith, Uvindu, Yasith, and Mithula for entrusting us with bringing this magical vision to life.",
   technology: {

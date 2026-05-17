@@ -5,6 +5,7 @@ import Preloader from "./Components/PreLoader";
 import ScrollToTop from "./Components/ScrollToTop";
 import LiveNoise from "./Components/LiveNoise";
 import ErrorBoundary from "./Components/ErrorBoundary";
+import StarfieldBackground from "./Components/StarfieldBackground";
 
 export default function ClientLayout({
   children,
@@ -59,9 +60,14 @@ export default function ClientLayout({
 
   return (
     <ErrorBoundary>
+      <StarfieldBackground />
       <ScrollToTop />
       <LiveNoise />
-      {loading ? <Preloader onFinish={() => setLoading(false)} /> : children}
+      {loading ? (
+        <Preloader onFinish={() => setLoading(false)} />
+      ) : (
+        <div className="relative z-[10] min-h-screen">{children}</div>
+      )}
     </ErrorBoundary>
   );
 }

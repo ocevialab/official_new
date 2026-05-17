@@ -56,8 +56,41 @@ const ProjectPage = () => {
     );
   }
 
+  const liveHref = project.link?.trim();
+  const hasLiveSite = Boolean(liveHref && /^https?:\/\//i.test(liveHref));
+
   const handleMouseEnter = () => setIsHoverImage(true);
   const handleMouseLeave = () => setIsHoverImage(false);
+
+  const heroVisual = (
+    <div className="relative w-full h-full">
+      <Image
+        src={project.lowqualityImg || project.img}
+        alt={`${project.name} Preview`}
+        fill
+        sizes="100vw"
+        className="object-cover w-full h-full filter blur-sm scale-105"
+      />
+
+      {isLoading && (
+        <div className="absolute inset-0 z-30 flex items-center justify-center bg-black bg-opacity-30">
+          <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      )}
+
+      <Image
+        src={project.img}
+        alt={`${project.name} High Res`}
+        fill
+        sizes="100vw"
+        className={`object-cover w-full h-full transition-opacity duration-700 ${
+          isLoading ? "opacity-50" : "opacity-100"
+        }`}
+        loading="lazy"
+        onLoad={() => setIsLoading(false)}
+      />
+    </div>
+  );
 
   return (
     <>
@@ -94,43 +127,18 @@ const ProjectPage = () => {
               )}
             </AnimatePresence>
 
-            <Link
-              href={project.link || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
-              passHref
-            >
-              <div className="relative w-full h-full">
-                {/* Low quality blurred image */}
-                <Image
-                  src={project.lowqualityImg || project.img}
-                  alt={`${project.name} Preview`}
-                  fill
-                  sizes="100vw"
-                  className="object-cover w-full h-full filter blur-sm scale-105"
-                />
-
-                {/* Spinner overlay */}
-                {isLoading && (
-                  <div className="absolute inset-0 z-30 flex items-center justify-center bg-black bg-opacity-30">
-                    <div className="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
-                  </div>
-                )}
-
-                {/* High quality image */}
-                <Image
-                  src={project.img}
-                  alt={`${project.name} High Res`}
-                  fill
-                  sizes="100vw"
-                  className={`object-cover w-full h-full transition-opacity duration-700 ${
-                    isLoading ? "opacity-50" : "opacity-100"
-                  }`}
-                  loading="lazy"
-                  onLoad={() => setIsLoading(false)}
-                />
-              </div>
-            </Link>
+            {hasLiveSite ? (
+              <Link
+                href={liveHref!}
+                target="_blank"
+                rel="noopener noreferrer"
+                passHref
+              >
+                {heroVisual}
+              </Link>
+            ) : (
+              heroVisual
+            )}
           </motion.div>
         </div>
 
@@ -142,16 +150,18 @@ const ProjectPage = () => {
                 {project.description}
               </p>
             </div>
-            <div className="w-full flex justify-start items-center mt-10">
-              <Link
-                href={project.link || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-6 py-3 bg-[#333] text-white rounded-md hover:bg-[#444] transition-colors duration-300"
-              >
-                Visit Live
-              </Link>
-            </div>
+            {hasLiveSite && (
+              <div className="w-full flex justify-start items-center mt-10">
+                <Link
+                  href={liveHref!}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-6 py-3 bg-[#333] text-white rounded-md hover:bg-[#444] transition-colors duration-300"
+                >
+                  Visit Live
+                </Link>
+              </div>
+            )}
           </div>
 
           <div className="w-full md:w-1/3 bg-[#212121] md:p-12 p-6 flex justify-center items-center">

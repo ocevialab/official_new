@@ -113,7 +113,7 @@ const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 -z-10 overflow-hidden bg-[#050505]"
+      className="fixed inset-0 -z-10 overflow-hidden bg-transparent"
     >
       {/* Cover frame: fills viewport like object-cover (no side bars on ultrawide / portrait) */}
       <div className="absolute inset-0 overflow-hidden">
